@@ -1,0 +1,16 @@
+[color]
+    ui = auto
+[user]
+    name = Daniel Miladinov
+    email = daniel.miladinov@gmail.com
+[core]
+    autocrlf = input
+[alias]
+    unstage = reset HEAD
+    ci = commit --verbose
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[merge]
+	tool = "p4merge"
+[mergetool "p4merge"]
+    path = "/c/Program Files/Perforce/p4merge.exe"
+	cmd = p4merge $BASE $LOCAL $REMOTE $MERGED
