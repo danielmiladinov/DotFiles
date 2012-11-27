@@ -10,7 +10,7 @@
     ci = commit --verbose
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [merge]
-	tool = "p4merge"
+    tool = "p4merge"
 [mergetool "p4merge"]
     path = "/c/Program Files/Perforce/p4merge.exe"
-	cmd = p4merge $BASE $LOCAL $REMOTE $MERGED
+    cmd = p4merge $BASE $LOCAL $REMOTE $MERGED
