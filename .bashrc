@@ -7,3 +7,7 @@ function prune-remote () {
         fi; 
     done
 }
+
+function orig-remove () {
+    find . -name "*.orig" | xargs rm
+}
