@@ -12,6 +12,7 @@
     ff = merge --ff-only
     prune-remote = !bash -ic 'prune-remote $@' -
     sha = !bash -ic 'sha' -
+    ar = !git ls-files --deleted | xargs git rm
 [merge]
     tool = "p4merge"
 [mergetool "p4merge"]
