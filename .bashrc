@@ -1,3 +1,6 @@
+# Helpful aliases
+alias github=git clone -o github
+
 function prune-remote () {
     for branch in `git remote show ${1} | grep tracked | awk '{print $1}'`;
     do 
