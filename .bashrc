@@ -11,3 +11,11 @@ function prune-remote () {
 function orig-remove () {
     find . -name "*.orig" | xargs rm
 }
+
+function sha () {
+    if [ -d .git ]; then
+        cat .git/`cat .git/HEAD | awk '{print $2}'`
+    else
+        echo "not in a git repository root";
+    fi
+}

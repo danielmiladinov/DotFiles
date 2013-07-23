@@ -11,6 +11,7 @@
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     ff = merge --ff-only
     prune-remote = !bash -ic 'prune-remote $@' -
+    sha = !bash -ic 'sha' -
 [merge]
     tool = "p4merge"
 [mergetool "p4merge"]
