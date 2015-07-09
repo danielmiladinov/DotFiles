@@ -1,4 +1,5 @@
 # Helpful aliases
+alias g="git"
 alias github=git clone -o github
 
 function prune-remote () {
