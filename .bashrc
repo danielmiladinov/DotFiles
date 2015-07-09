@@ -23,3 +23,6 @@ function sha () {
         echo "not in a git repository root";
     fi
 }
+
+# Other scripts to include
+source ~/.git-prompt
