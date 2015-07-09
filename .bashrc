@@ -26,3 +26,4 @@ function sha () {
 
 # Other scripts to include
 source ~/.git-prompt
+source ~/.git-completion
