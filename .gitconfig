@@ -12,6 +12,7 @@
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     ff = merge --ff-only
     prune-remote = !bash -ic 'pruneRemote $@' -
+    orig-remove = !bash -ic 'origRemove' -
     sha = !bash -ic 'sha' -
     ar = !git ls-files --deleted | xargs git rm
 [merge]
