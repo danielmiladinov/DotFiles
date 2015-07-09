@@ -2,7 +2,7 @@
 alias g="git"
 alias github="git clone -o github"
 
-function prune-remote () {
+function pruneRemote () {
     for branch in `git remote show ${1} | grep tracked | awk '{print $1}'`;
     do 
         isLocal=`git branch | grep ${branch}`; 
@@ -12,7 +12,7 @@ function prune-remote () {
     done
 }
 
-function orig-remove () {
+function origRemove () {
     find . -name "*.orig" | xargs rm
 }
 
